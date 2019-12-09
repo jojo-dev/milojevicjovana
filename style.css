@@ -1,0 +1,302 @@
+@import "skill.css";
+
+.gradientStyle,
+.btn:hover,
+footer p,
+.flip {
+  background: linear-gradient(90deg, #fe1a27 -10%, #300657 105%);
+  border: none;
+}
+.wrapper {
+  width: fit-content;
+}
+.container {
+  margin: 0 auto;
+  width: 95%;
+  text-align: center;
+}
+@media only screen and(max-width:200px){
+  
+}
+@media only screen and (min-width: 1500px) {
+  .body {
+    font-size: 2rem;
+  }
+  .container {
+    min-width: 70%;
+  }
+  .Navbar {
+    margin: 5rem auto;
+    max-width: 70%;
+  }
+  .helloWorld {
+    margin: 0 auto 5rem auto;
+    font-size: 5rem;
+  }
+  section#introPart {
+    min-height: 450px;
+    text-align: left;
+  }
+  .photo img {
+    min-width: 450px;
+  }
+  .page {
+    margin: 50rem 0;
+    min-height: fit-content;
+  }
+  .jQuote_text {
+    font-size: 30rem;
+  }
+  .intro p.introName {
+    font-size: 8rem;
+  }
+
+  .contactPart {
+    max-width: 80%;
+    margin: auto;
+    padding: 5rem;
+  }
+  .socIcon a img {
+    max-width: 15%;
+  }
+}
+
+.containerBlack {
+  padding: 1rem 3rem 2rem 3rem;
+  background-color: #1d1d1d;
+  box-shadow: 3px 5px 5px 0px #202020;
+  color: #f8f8f8;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+.page {
+  width: 100%;
+  margin: 1rem 0 10rem 0;
+  text-align: center;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2efea;
+  color: #1d1d1d;
+  /* color: #f8f8f8; */
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Raleway", "Oswald", sans-serif;
+}
+
+/* navigation */
+.Navbar {
+  display: flex;
+  padding: 16px;
+  font-family: sans-serif;
+  text-align: left;
+  height: 3rem;
+}
+.Navbar__Items {
+  display: flex;
+  line-height: 2rem;
+}
+.Navbar__Link {
+  padding-right: 8px;
+}
+.Navbar__Items--right {
+  margin-left: auto;
+}
+@media only screen and (max-width: 800px) {
+  .Navbar__Items,
+  .Navbar {
+    flex-direction: column;
+  }
+  .Navbar__Items {
+    display: none;
+  }
+  .Navbar__Link-toggle {
+    align-self: flex-end;
+    display: initial;
+    cursor: pointer;
+  }
+  .Navbar__ToggleShow {
+    display: flex;
+  }
+}
+.Navbar__Link-toggle {
+  align-self: flex-end;
+  display: initial;
+  position: absolute;
+  cursor: pointer;
+  padding: 2% 5%;
+}
+.Navbar__Link-toggle i {
+  color: #202020;
+}
+.Navbar__Link a {
+  text-decoration: none;
+  color: #202020;
+}
+.Navbar__Link a:active,
+.Navbar__Link a:hover {
+  border: 1px solid #202020;
+  background: none;
+  color: #202020;
+  border-radius: 10px;
+  padding: 7px;
+}
+
+.my_logo {
+  padding: 1%;
+}
+.resumeBtn {
+  float: right;
+  width: 120px;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 2% 5%;
+}
+/* greetengs */
+.helloWorld p {
+  text-align: center;
+  margin: 3% auto;
+  font-size: 6rem;
+  font-weight: 100;
+  width: 100%;
+  text-shadow: 0px 1.2px 1.2px #202020;
+  letter-spacing: 1.5rem;
+}
+/* intro part */
+#introPart {
+  min-height: 280px;
+  width: 100%;
+}
+.intro {
+  padding: 2rem 1rem;
+  text-align: right;
+}
+
+.introName {
+  font-family: "Raleway";
+  font-size: 5rem;
+  text-shadow: 0px 1px 1px #202020;
+}
+.myName {
+  color: #eeeeee;
+}
+.introJob {
+  font-size: 1.5rem;
+  text-shadow: 0px 1px 1px #202020;
+  font-family: "Raleway";
+}
+.photo {
+  margin: auto;
+  max-width: 280px;
+}
+
+/* quote */
+.jQuote {
+  font-family: "Roboto Light";
+  margin: 30px 0;
+  padding-top: 2%;
+}
+.jQuote_text {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-top: 1.5rem;
+}
+.jQuote_name {
+  font-size: 1.1rem;
+}
+
+/* Page second -my journey */
+#my_journey {
+  margin-top: 10%;
+  color: #1d1d1d;
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+h2 {
+  text-align: left;
+}
+td {
+  vertical-align: top;
+  border-bottom: 1px solid #ddd;
+  padding: 0.7rem;
+}
+
+.eduTable {
+  width: 90%;
+  text-align: left;
+  margin-top: 3rem;
+  font-family:sans-serif;
+}
+.about p {
+  width: 100%;
+  text-align: justify;
+  margin-top: 3rem;
+  padding: 0 1rem 0 0;
+}
+
+/* Page third -skill part */
+.skillPart img {
+  max-width: 70%;
+}
+
+/* Page four -contact part */
+#contact {
+  background: radial-gradient(circle, #202020 -30%, #111111 110%);
+  color: #eeeeee;
+}
+.contactForm {
+  max-height: 600px;
+  width: 80%;
+  margin: 3rem auto;
+}
+.contactForm h3 {
+  margin: 50px auto;
+}
+.sendBtn {
+  min-width: 100px;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  margin: 1rem auto;
+}
+.contactInfo {
+  margin: 3rem auto;
+  text-align: center;
+  font-weight: 100;
+  font-size: 1.2rem;
+  width: 90%;
+}
+.contactInfo h4 {
+  font-weight: 800;
+}
+.socIcon img {
+  margin-top: 100px;
+  padding: 10px;
+  max-width: 20%;
+}
+
+input[type="tel"],
+input[type="email"],
+input[type="text"] {
+  background-color: #1d1d1d;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #fff;
+  margin: 50px auto;
+  width: 80%;
+}
+
+/* footer part */
+footer p {
+  margin: 10px 0 10px 20px;
+}
+footer p,
+.flip {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.flip {
+  display: inline-block;
+  transform: rotateY(180deg);
+}

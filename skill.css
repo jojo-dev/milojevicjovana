@@ -1,0 +1,25 @@
+.scrollPartRight, .scrollPartLeft {
+  font-family: "Raleway";
+  writing-mode: vertical-lr;
+  color: rgb(146, 146, 146);
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 3pt;
+}
+.scrollPartLeft {
+  transform: rotate(180deg);
+}
+.scrollPartRight {
+  float: right;
+}
+.subHeading:before {
+  content: "\00a0\00a0\00a0";
+  text-decoration-line: line-through;
+  font-size: small;
+}
+.subHeading {
+  font-size: 2rem;
+  font-family: "Raleway";
+  font-weight: 500;
+  letter-spacing: 10pt;
+}
