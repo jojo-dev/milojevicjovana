@@ -11,21 +11,26 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="style.css" />
-
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_Dj0LJWxQ0nlWoFfOXPcDm");
+    })();
+  </script>
 </head>
 
 <body>
   <main class="wrapper">
     <header>
       <section class="container-fluid">
-        <div class="Navbar row">
-          <div class="Navbar__Link-brand col-xl-4 col-xs-5">
+        <div class="Navbar row" id="top">
+          <div class="Navbar__Link-brand col-xl-3 col-xs-5">
             <div class="my_logo navbar-brand Navbar__Link-toggle ">
               <a class="navbar-brand" href="#">
                 <img src="images/my_logo.png" width="150px;" /></a>
             </div>
           </div>
-          <nav class="Navbar__Items col-xl-5">
+          <nav class="Navbar__Items col-xl-6">
             <div class="Navbar__Link col-xl-2">
               <a class="me acive" href="#me">me</a>
             </div>
@@ -73,8 +78,8 @@
     </header>
     <!-- end of header -->
 
-    <section class="container">
-      <section id="jQuote" class="page">
+    <section id="jQuote" class="container">
+      <section  class="page">
         <div class="jQuote row">
           <div class="column col-lg-1 col-xs-2">
             <p class="scrollPartLeft">SCROLL &numsp; <span class="subHeading"></span></p>
@@ -146,7 +151,7 @@
             </p>
           </div>
           <div class="column col-lg-11 col-sx-7">
-            <img class="skills" src="images/Skills2.png" width="80%" /> </div>
+            <img class="skills" src="images/skills.png" width="80%" /> </div>
         </div>
       </section>
       <!-- end of skill part -->
@@ -179,18 +184,18 @@
           </div>
 
           <div class="col-xs-10 col-md-5  col-lg-6">
-            <div class="contactForm containerBlack">
+            <div class="contact-form containerBlack">
               <h3>CONTACT FORM</h3>
               <div class="">
-                <form method="post" name="myemailform" enctype="text/plain">
-                  <input type="text" class="form-control" name="name" id="" placeholder="Your name" />
-                  <input type="tel" class="form-control" name="phone" id="" placeholder="Your phone" />
-                  <input type="email" class="form-control" name="email" id="" placeholder="Your e-mail" />
-                  <input type="text" class="form-control" name="text" id="" placeholder="Your message" />
+                <form id="contact-form" method="post" name="myemailform" enctype="text/plain">
+                  <input type="text" class="form-control" name="user_name" id="" placeholder="Your name" />
+                  <input type="tel" class="form-control" name="contact_phone" id="" placeholder="Your phone" />
+                  <input type="email" class="form-control" name="user_email" id="" placeholder="Your e-mail" />
+                  <input type="text" class="form-control" name="messaget" id="" placeholder="Your message" />
                 </form>
               </div>
               <a href="mailto:jovanamilojevicofficial@gmail.com" target="_top"><button
-                  class="btn sendBtn btn-dark">SEND</button></a>
+                  class=" submit btn sendBtn btn-dark">SEND</button></a>
             </div>
           </div>
         </div>
@@ -206,7 +211,8 @@
             <a href="#">&COPY 2019 M&LOJEV<span class="flip">&</span>C DESIGN</a>
             | All rights reserved
           </p>
-        </div>
+         </div>
+
       </div>
     </footer>
 
@@ -228,6 +234,15 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
+  </script>
+  <script type="text/javascript">(function () {
+      emailjs.init('user_Dj0LJWxQ0nlWoFfOXPcDm');
+    })();
+  </script>
+
+
 </body>
 
 </html>

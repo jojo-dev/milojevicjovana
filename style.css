@@ -4,7 +4,7 @@
 .btn:hover,
 footer p,
 .flip {
-  background: linear-gradient(90deg, #fe1a27 -10%, #300657 105%);
+  background: linear-gradient(90deg, #f81420 -10%, #37114d 105%);
   border: none;
 }
 .wrapper {
@@ -63,7 +63,7 @@ footer p,
 
 .containerBlack {
   padding: 1rem 3rem 2rem 3rem;
-  background-color: #1d1d1d;
+  background-color: #252525;
   box-shadow: 3px 5px 5px 0px #202020;
   color: #f8f8f8;
   font-size: 1.5rem;
@@ -86,6 +86,10 @@ body {
 }
 
 /* navigation */
+.wrapper {
+  background-image: url("images/5537.jpg");
+  background-size: auto;
+}
 .Navbar {
   display: flex;
   padding: 16px;
@@ -96,6 +100,7 @@ body {
 .Navbar__Items {
   display: flex;
   line-height: 2rem;
+  text-align: center;
 }
 .Navbar__Link {
   padding-right: 8px;
@@ -241,11 +246,11 @@ td {
 }
 
 /* Page four -contact part */
-#contact {
-  background: radial-gradient(circle, #202020 -30%, #111111 110%);
+#contact{
+  background: linear-gradient(#363636 -10%, #111111 110%);
   color: #eeeeee;
 }
-.contactForm {
+.contact-form {
   max-height: 600px;
   width: 80%;
   margin: 3rem auto;
@@ -269,16 +274,16 @@ td {
 .contactInfo h4 {
   font-weight: 800;
 }
-.socIcon img {
+.socIcon img{
   margin-top: 100px;
   padding: 10px;
-  max-width: 20%;
+  max-width: 15%;
 }
 
 input[type="tel"],
 input[type="email"],
 input[type="text"] {
-  background-color: #1d1d1d;
+  background-color: #252525;
   border: none;
   border-radius: 0;
   border-bottom: 1px solid #fff;
