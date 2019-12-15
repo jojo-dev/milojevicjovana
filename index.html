@@ -11,19 +11,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="style.css" />
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("user_Dj0LJWxQ0nlWoFfOXPcDm");
-    })();
-  </script>
+  <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
 </head>
 
 <body>
   <main class="wrapper">
     <header>
       <section class="container-fluid">
-        <div class="Navbar row" id="top">
+        <div class="Navbar row">
           <div class="Navbar__Link-brand col-xl-3 col-xs-5">
             <div class="my_logo navbar-brand Navbar__Link-toggle ">
               <a class="navbar-brand" href="#">
@@ -31,7 +26,7 @@
             </div>
           </div>
           <nav class="Navbar__Items col-xl-6">
-            <div class="Navbar__Link col-xl-2">
+            <div class="Navbar__Link col-xl-3">
               <a class="me acive" href="#me">me</a>
             </div>
             <div class="Navbar__Link col-xl-3">
@@ -50,36 +45,35 @@
           </div>
         </div>
       </section>
-
-      <!-- first page -->
-      <section id="me">
-        <div class="container-fluid">
-          <section class="greet row">
-            <span class="helloWorld col-xs-12 col-lg-12">
-              <p>HELLO WORLD</p>
-            </span>
-          </section>
-          <section id="introPart" class="gradientStyle">
-            <div class="row ">
-              <div class="intro col-xs-6 col-md-5 col-xl-6">
-                <p class="introName">I'm <span class="myName">Jovana</span></p>
-                <br />
-                <p class="introJob">JUNIOR WEB DEVELOPER / DESIGNER</p>
-              </div>
-
-              <div class="photo col-xs-6 col-xl-6">
-                <img src="images/cv-photo.png" width="280px" />
-              </div>
-
-            </div>
-          </section>
-        </div>
-      </section>
     </header>
+    <!-- first page -->
+    <div id="me" class="container">
+      <section class="greet row">
+        <span class="helloWorld col-xs-12 col-lg-12">
+          <p>HELLO WORLD</p>
+        </span>
+      </section>
+    </div>
+
+    <section id="introPart" class="gradientStyle container-fluid">
+      <div class="row ">
+        <div class="intro col-xs-6 col-md-5 col-xl-6">
+          <p class="introName">I'm <span class="myName">Jovana</span></p>
+          <br />
+          <p class="introJob">JUNIOR WEB DEVELOPER / DESIGNER</p>
+        </div>
+
+        <div class="photo col-xs-6 col-xl-6">
+          <img src="images/cv-photo.png" width="280px" />
+        </div>
+
+      </div>
+    </section>
+
     <!-- end of header -->
 
-    <section id="jQuote" class="container">
-      <section  class="page">
+    <section class="container">
+      <section id="jQuote" class="page">
         <div class="jQuote row">
           <div class="column col-lg-1 col-xs-2">
             <p class="scrollPartLeft">SCROLL &numsp; <span class="subHeading"></span></p>
@@ -125,10 +119,11 @@
           <section class="column col-lg-6">
             <div class="about ">
               <h2>My journey</h2>
-              <p>While i was studing psychology I realized that I wanted to do something more creative, challenging and
-                different. So i started learning about web design. At some point I became interested in web development
-                so I started learning that too. I was more and more impressed with what you can do with PC and little
-                knowledge of how and what to google. <br>
+              <p>I'm student of psychology who decided to become self taught web developer and designer.<br>
+                I don't have any practical work experience in this field that i could cite.
+                But I have four years of volonteer experience in diferent organisations.During that time i became
+                dedicated, adaptable and loyal worker.<br>
+                I trive to improve my knowledge and skills in order to advance my career in IT.
               </p>
             </div>
           </section>
@@ -184,43 +179,55 @@
           </div>
 
           <div class="col-xs-10 col-md-5  col-lg-6">
-            <div class="contact-form containerBlack">
+            <div class="contactForm containerBlack">
               <h3>CONTACT FORM</h3>
-              <div class="">
-                <form id="contact-form" method="post" name="myemailform" enctype="text/plain">
+
+              <form action="https://send.pageclip.co/YzilRDKoR2oPpXiggcaEItikyUfkVzze" class="pageclip-form"
+                method="post">
+                <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
+                <input type="text" class="form-control" name="user_name" id="" placeholder="Your name" />
+                <input type="tel" class="form-control" name="user_phone" id="" placeholder="Your phone" />
+                <input type="email" class="form-control" name="user_email" id="" placeholder="Your e-mail" />
+                <input type="text" class="form-control" name="message" id="" placeholder="Your message" />
+
+
+                <!-- This button will have a loading spinner. Keep the inner span for best results. -->
+                <button type="submit" class="btn sendBtn btn-dark pageclip-form__submit">
+                  SEND
+                </button>
+              </form>
+              <div id="contact-form">
+                <form action="https://formspree.io/mvognezl" method="post" name="myemailform" enctype="text/plain">
                   <input type="text" class="form-control" name="user_name" id="" placeholder="Your name" />
-                  <input type="tel" class="form-control" name="contact_phone" id="" placeholder="Your phone" />
+                  <input type="tel" class="form-control" name="user_phone" id="" placeholder="Your phone" />
                   <input type="email" class="form-control" name="user_email" id="" placeholder="Your e-mail" />
-                  <input type="text" class="form-control" name="messaget" id="" placeholder="Your message" />
+                  <input type="text" class="form-control" name="message" id="" placeholder="Your message" />
                 </form>
               </div>
-              <a href="mailto:jovanamilojevicofficial@gmail.com" target="_top"><button
-                  class=" submit btn sendBtn btn-dark">SEND</button></a>
+              <button class="btn sendBtn btn-dark" type="submit">SEND</button>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- end of contact part -->
+    </section> <!-- end of contact part -->
     <!-- footer -->
     <footer>
       <div class="container-fluid">
         <div class="row">
           <p>
             &nbsp;
-            <a href="#">&COPY 2019 M&LOJEV<span class="flip">&</span>C DESIGN</a>
-            | All rights reserved
+            <a target="_blank"
+              href="https://www.behance.net/milojevic-design?tracking_source=search%7CMarko%20milojevic">
+              &nbsp; &COPY MILOJEVIC DESIGN </a>
+            | 2019 All rights reserved
           </p>
-         </div>
-
+        </div>
       </div>
     </footer>
 
 
 
   </main>
-
-
 
   <!-- FLATICON LINK -->
   <script src="https://kit.fontawesome.com/e1d54cac1a.js" crossorigin="anonymous"></script>
@@ -235,14 +242,21 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
-  </script>
-  <script type="text/javascript">(function () {
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@6.9.0/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
       emailjs.init('user_Dj0LJWxQ0nlWoFfOXPcDm');
     })();
   </script>
-
-
+  <script>window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        // generate the contact number value
+        this.contact_number.value = Math.random() * 100000 | 0;
+        emailjs.sendForm('gmail', 'contactFormMilojevicDesignCV', this);
+      });
+    }</script>
+  <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 </body>
 
 </html>

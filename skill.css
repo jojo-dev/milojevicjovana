@@ -2,9 +2,12 @@
   font-family: "Raleway";
   writing-mode: vertical-lr;
   color: rgb(146, 146, 146);
-  text-align: center;
+  text-align: left;
+  vertical-align: top;
   font-size: 1rem;
   letter-spacing: 3pt;
+  margin-left:0;
+
 }
 .scrollPartLeft {
   transform: rotate(180deg);
