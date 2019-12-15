@@ -1,44 +1,16 @@
-// var email = require('emailjs');
-
-// var server = email.server.connect({
-//   user: 'jovanamilojevicofficial@gmail.com',
-//   password: 'stackoverflow',
-//   host: 'smtp.gmail.com',
-//   ssl: true
-// });
-
-// server.send({
-//   text: 'Hey howdy',
-//   from: 'NodeJS',
-//   to: 'Wilson <wilson.balderrama@gmail.com>',
-//   cc: '',
-//   subject: 'Greetings'
-// }, function (err, message) {
-//   console.log(err || message);
-// });
-
-
-
-
+var form = document.querySelector(".pageclip-form");
+Pageclip.form(form, {
+  onSubmit: function(event) {},
+  onResponse: function(error, response) {},
+  successTemplate: "<span>Thank you!</span>"
+});
 
 var data = {
-    service_id: "gmail",
-    template_id: "contactFormMilojevicDesignCV",
-    user_id:  "user_Dj0LJWxQ0nlWoFfOXPcDm",
-    templateParams = {
-        name: document.getElementByName("user_name"),
-        email: document.getElementByName("user_email"),
-        phone: document.getElementByName("user_phone"),
-        message: document.getElementByName("message")
-    }
-};
-
-$.ajax('https://api.emailjs.com/api/v6.9.0/email/send', {
-    type: 'POST',
-    data: JSON.stringify(data),
-    contentType: 'application/json'
-}).done(function() {
-    alert('Your mail is sent!');
-}).fail(function(error) {
-    alert('Oops... ' + JSON.stringify(error));
-});
+    name:String,
+    email: String,
+    phone: Number,
+    Message: String
+  }
+  Pageclip.send('api_Wlrp1zJATYZmhR2X2AmOUjBeJ5rMuTpQ', 'contact', data, function (error, response) {
+    console.log('saved?', !!error, '; response:', error || response)
+  })
