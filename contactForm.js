@@ -19,3 +19,7 @@ Pageclip.send(
     console.log("saved?", !!error, "; response:", error || response);
   }
 );
+
+(function() {
+  emailjs.init("user_Dj0LJWxQ0nlWoFfOXPcDm");
+})();
