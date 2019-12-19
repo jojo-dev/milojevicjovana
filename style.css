@@ -9,8 +9,8 @@ body {
   text-align: center;
   font-size: 1.2rem;
   font-family: "Raleway", "Oswald", sans-serif;
-  background-image: url("images/5537.jpg");
   background-size: auto;
+  overflow-x:hidden;
 }
 /* page sections style */
 .gradientStyle,
