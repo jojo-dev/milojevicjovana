@@ -15,21 +15,12 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- end of styling links -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
             emailjs.init("user_Dj0LJWxQ0nlWoFfOXPcDm");
         })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function () {
-            document.getElementById('contact-form').addEventListener('submit', function (event) {
-                event.preventDefault();
-                this.contact_number.value = Math.random() * 100000 | 0;
-                emailjs.sendForm('gmail', 'contactFormMilojevicDesignCV', this);
-            });
-        }
-    </script>
+    </script> -->
 </head>
 
 <body>
@@ -187,15 +178,17 @@
         <div class="w3-col s12 l6">
             <section class="contactForm containerBlack">
                 <h3>CONTACT FORM</h3>
-                <form id="myForm" method="POST">
+                <form id="myForm" method="POST" action="https://formspree.io/moqjvgnl">
                     <input type="text" class="form-control" name="user_name" placeholder="Your name" required />
                     <input type="tel" class="form-control" name="user_phone" placeholder="Your phone" />
                     <input type="email" class="form-control" name="user_email" placeholder="Your e-mail" required />
                     <input type="text" class="form-control" name="message" placeholder="Your message" required />
                     <!-- This button will have a loading spinner. Keep the inner span for best results. -->
                     <button type="submit" id="sendBtn" class="btn btn-dark pageclip-form__submit">
-                        <span>SEND</span>
+                        SEND
+                        <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
                     </button>
+                    <p id="my-form-status"></p>
                 </form>
             </section>
         </div>
@@ -229,16 +222,7 @@
             }
         }
     </script>
-    <script type="text/javascript" src="contactForm.js"></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script> -->
+    <!-- <script type="text/javascript" src="contactForm.js"></script> -->
 </body>
 
 </html>

@@ -34,6 +34,8 @@ footer p {
   color: #f8f8f8;
   font-size: 1.5rem;
   line-height: 3rem;
+  min-height: 500px;
+  max-width: 80%;
 }
 .page {
   width: 100%;

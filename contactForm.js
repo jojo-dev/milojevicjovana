@@ -1,51 +1,48 @@
-// POST https://api.emailjs.com/api/v1.0/email/send-form
+// window.addEventListener("DOMContentLoaded", function() {
+//   // get the form elements defined in your form HTML above
 
-$("#myForm").on("submit", function(event) {
-  event.preventDefault(); // prevent reload
+//   var form = document.getElementById("myForm");
+//   var name = document.getElementById("user_name");
+//   var phone = document.getElementById("user_phone");
+//   var email = document.getElementById("user_email");
+//   var message = document.getElementById("message");
+//   var button = document.getElementById("sendBtn");
+//   var status = document.getElementById("my-form-status");
 
-  var formData = new FormData(this);
-  formData.append("service_id", "gmail");
-  formData.append("template_id", "YcontactFormMilojevicDesignCV");
-  formData.append("user_id", "user_Dj0LJWxQ0nlWoFfOXPcDm");
+//   // Success and Error functions for after the form is submitted
 
-  $.ajax("https://api.emailjs.com/api/v1.0/email/send-form", {
-    type: "POST",
-    data: formData,
-    contentType: false, // auto-detection
-    processData: false // no need to parse formData to string
-  })
-    .done(function() {
-      alert("Your mail is sent!");
-    })
-    .fail(function(error) {
-      alert("Oops... " + JSON.stringify(error));
-    });
-});
+//   function success() {
+//     form.reset();
+//     button.style = "display: none ";
+//     status.innerHTML = "Thanks!";
+//   }
 
-// var myform = $("form#myform");
-// myform.submit(function(event) {
-//   event.preventDefault();
+//   function error() {
+//     status.innerHTML = "Oops! There was a problem.";
+//   }
 
-//   var params = myform.serializeArray().reduce(function(obj, item) {
-//     obj[item.name] = item.value;
-//     return obj;
-//   }, {});
+//   // handle the form submission event
 
-//   // Change to your service ID, or keep using the default service
-//   var service_id = "gmail";
-
-//   var template_id = "contactFormMilojevicDesignCV";
-//   myform.find("button").text("Sending...");
-//   emailjs.send(service_id, template_id, params).then(
-//     function() {
-//       alert("Sent!");
-//       myform.find("button").text("Send");
-//     },
-//     function(err) {
-//       alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-//       myform.find("button").text("Send");
-//     }
-//   );
-
-//   return false;
+//   form.addEventListener("submit", function(ev) {
+//     ev.preventDefault();
+//     var data = new FormData(form);
+//     ajax(form.method, form.action, data, success, error);
+//   });
 // });
+
+// // helper function for sending an AJAX request
+
+// function ajax(method, url, data, success, error) {
+//   var xhr = new XMLHttpRequest();
+//   xhr.open(method, url);
+//   xhr.setRequestHeader("Accept", "application/json");
+//   xhr.onreadystatechange = function() {
+//     if (xhr.readyState !== XMLHttpRequest.DONE) return;
+//     if (xhr.status === 200) {
+//       success(xhr.response, xhr.responseType);
+//     } else {
+//       error(xhr.status, xhr.response, xhr.responseType);
+//     }
+//   };
+//   xhr.send(data);
+// }
