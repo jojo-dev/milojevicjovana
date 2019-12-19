@@ -132,6 +132,7 @@ a:link {
   .helloWorld p {
     max-width:80%;
     text-align: center;
+    padding:2rem;
   }
   .navbar-brand img {
     margin-top: 3%;
