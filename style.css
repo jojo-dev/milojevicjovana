@@ -156,11 +156,11 @@ a:link {
 /* Hello World part */
 .helloWorld p {
   font-family: "Oswald";
-  margin: 5% 0;
+  margin: 5% 0 5% 0;
   font-size: 6rem;
   font-weight: 700;
   text-shadow: 0px 1.2px 1.2px #202020;
-  letter-spacing: 1.5rem;
+  letter-spacing: 1.2rem;
 }
 
 /* Intro part/ gradient background */
@@ -215,6 +215,7 @@ a:link {
 #my_journey {
   font-family: "Raleway";
   margin-top: 10%;
+  margin-right: 2rem;
   padding: 2rem;
   color: #1d1d1d;
   font-size: 1.2rem;
