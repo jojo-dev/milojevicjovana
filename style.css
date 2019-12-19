@@ -128,7 +128,7 @@ a:link {
   letter-spacing: 10pt;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 720px) {
   .helloWorld p {
     max-width:80%;
     text-align: center;
