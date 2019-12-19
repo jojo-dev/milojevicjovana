@@ -15,6 +15,21 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- end of styling links -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_Dj0LJWxQ0nlWoFfOXPcDm");
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                this.contact_number.value = Math.random() * 100000 | 0;
+                emailjs.sendForm('gmail', 'contactFormMilojevicDesignCV', this);
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -37,10 +52,10 @@
             </div>
 
             <div id="demo" class="navItemsHid w3-bar-block w3-hide w3-hide-large w3-hide-medium">
-                <a href="#" class="w3-bar-item w3-button">me</a>
-                <a href="#" class="w3-bar-item w3-button">my journey</a>
-                <a href="#" class="w3-bar-item w3-button">my skills</a>
-                <a href="#" class="w3-bar-item w3-button">contact</a>
+                <a href="#me" class="w3-bar-item w3-button">me</a>
+                <a href="#my_journey" class="w3-bar-item w3-button">my journey</a>
+                <a href="#my_skills" class="w3-bar-item w3-button">my skills</a>
+                <a href="#contact" class="w3-bar-item w3-button">contact</a>
             </div>
 
         </div>
@@ -172,7 +187,7 @@
         <div class="w3-col s12 l6">
             <section class="contactForm containerBlack">
                 <h3>CONTACT FORM</h3>
-                <form id="myForm" method="post">
+                <form id="myForm" method="POST">
                     <input type="text" class="form-control" name="user_name" placeholder="Your name" required />
                     <input type="tel" class="form-control" name="user_phone" placeholder="Your phone" />
                     <input type="email" class="form-control" name="user_email" placeholder="Your e-mail" required />
@@ -214,14 +229,8 @@
             }
         }
     </script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("user_Dj0LJWxQ0nlWoFfOXPcDm");
-        })();
-    </script>
     <script type="text/javascript" src="contactForm.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -229,7 +238,7 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
 </body>
 
 </html>
