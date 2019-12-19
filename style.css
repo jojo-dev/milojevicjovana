@@ -1,79 +1,30 @@
-@import "skill.css";
-
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2efea;
+  color: #1d1d1d;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Raleway", "Oswald", sans-serif;
+  background-image: url("images/5537.jpg");
+  background-size: auto;
+}
+/* page sections style */
 .gradientStyle,
 footer p {
   background: linear-gradient(90deg, #f81420 -5%, #37114d 102%);
   border: none;
 }
-.btn:hover {
-  background: linear-gradient(90deg, #f81420 -25%, #37114d 100%);
-  border: none;
-  color: rgb(228, 228, 228);
-}
-.btn {
-  min-width: 120px;
-  text-align: center;
-  font-size: 1.2rem;
-  padding: 0.3rem;
-  border-radius: 1.3rem;
-  border: none;
-}
-.resumeBtn {
-  float: right;
-  background-color: #757575;
-  margin-top: 1rem;
-}
-.sendBtn {
-  margin: 2.5rem auto;
-}
-.container {
-  margin: 0 auto;
-  width: 95%;
-  text-align: center;
-}
-
-@media only screen and (min-width: 1500px) {
-  .body {
-    font-size: 2rem;
-  }
-  .container {
-    min-width: 70%;
-  }
-  .Navbar {
-    margin: 4rem auto;
-    max-width: 70%;
-  }
-  .helloWorld {
-    margin: 0 auto 5rem auto;
-    font-size: 5rem;
-  }
-  #introPart {
-    min-height: 450px;
-    text-align: left;
-    width: fit-content;
-  }
-  .photo img {
-    min-width: 450px;
-  }
-  .page {
-    margin: 50rem 0;
-    min-height: fit-content;
-  }
-  .jQuote_text {
-    font-size: 30rem;
-  }
-  .intro p.introName {
-    font-size: 8rem;
-  }
-
-  .contactPart {
-    max-width: 80%;
-    margin: auto;
-    padding: 5rem;
-  }
-  .socIcon a img {
-    max-width: 15%;
-  }
+footer p {
+  font-weight: 500;
+  float: left;
+  margin: 5px 0 5px 10px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .containerBlack {
@@ -86,173 +37,232 @@ footer p {
 }
 .page {
   width: 100%;
-  margin: 3rem 0 10rem 0;
+  margin: 3rem 0 5rem 0;
   text-align: center;
-}
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #f2efea;
-  color: #1d1d1d;
-  text-align: center;
-  font-size: 1.2rem;
-  font-family: "Raleway", "Oswald", sans-serif;
 }
 
-.wrapper {
-  background-image: url("images/5537.jpg");
-  background-size: auto;
+/*navigation bar   */
+.navbar-brand img {
+  float: left;
+  margin-left: 20%;
+  margin-top: 0.5%;
 }
-/* navigation */
-.Navbar {
-  display: flex;
-  padding: 0.5rem;
-  text-align: left;
+.navItems,
+.navItemsHid {
+  font-size: 1.1rem;
+  float: right;
+  margin-right: 5%;
   font-weight: 100;
 }
-.Navbar__Items {
-  display: flex;
-  line-height: 2rem;
-  text-align: center;
-  padding-top: 1rem;
-  height: 3rem;
-}
-
-@media only screen and (max-width: 800px) {
-  .Navbar__Items,
-  .Navbar {
-    flex-direction: column;
-  }
-  .Navbar__Items {
-    display: none;
-  }
-  .Navbar__Link-toggle {
-    align-self: flex-end;
-    display: initial;
-    cursor: pointer;
-  }
-  .Navbar__ToggleShow {
-    display: flex;
-  }
-}
-.Navbar__Link-toggle {
-  align-self: flex-end;
-  display: initial;
-  position: absolute;
-  cursor: pointer;
-  padding: 2% 5%;
-}
-.Navbar__Link a {
+.navItems a:link,
+a.w3-button:link,
+.navItems a:visited {
   text-decoration: none;
   vertical-align: text-bottom;
-  font-weight: 100;
-}
-.Navbar__Link a:visited,
-.Navbar__Link a:hover {
-  border: 1px solid #363636;
-  background: none;
-  color: #58687a;
-  border-radius: 1rem;
-  padding: 7px;
+  color: #252525;
 }
 
-/* greetengs */
-.helloWorld p {
+.navItems a:hover,
+.navItems a:active {
+  background-color: #1f052b;
+  color: #ffffff;
+}
+
+/* button style */
+.btn:hover {
+  background: linear-gradient(90deg, #f81420 -25%, #37114d 100%);
+  border: none;
+  color: #f2efea;
+}
+.btn {
+  min-width: 120px;
   text-align: center;
-  margin: 4% auto 4% auto;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  border-radius: 1.3rem;
+  border: none;
+  color: #f2efea;
+}
+#resumeBtn {
+  background-color: #757575;
+  margin: 1rem auto 1rem auto;
+}
+#sendBtn {
+  margin: 2.5rem auto;
+}
+a:link {
+  color: #22282e;
+  text-decoration-style: none;
+}
+
+/* scrolling part */
+.scrollPartRight,
+.scrollPartLeft {
+  font-family: "Raleway";
+  writing-mode: vertical-lr;
+  color: rgb(146, 146, 146);
+  text-align: left;
+  vertical-align: top;
+  font-size: 1rem;
+  letter-spacing: 3pt;
+  margin-left: 0;
+}
+.scrollPartLeft {
+  transform: rotate(180deg);
+}
+.scrollPartRight {
+  float: right;
+}
+.subHeading:before {
+  content: "\00a0\00a0\00a0";
+  text-decoration-line: line-through;
+  font-size: small;
+}
+.subHeading {
+  font-size: 2rem;
+  font-family: "Raleway";
+  font-weight: 500;
+  letter-spacing: 10pt;
+}
+
+@media only screen and (max-width: 600px) {
+  .helloWorld p {
+    max-width: 80%;
+    text-align: center;
+  }
+  .navbar-brand img {
+    margin-top: 3%;
+  }
+  .eduTable {
+    min-width: 90%;
+    margin-bottom: 30%;
+  }
+  .about {
+    padding-right: 1rem;
+  }
+  .skillPart img {
+    margin-top: 30%;
+  }
+  .introName {
+    float: left;
+    margin-left: -20px;
+  }
+}
+
+/* Hello World part */
+.helloWorld p {
+  font-family: "Oswald";
+  margin: 5% auto;
   font-size: 6rem;
-  font-weight: 100;
-  width: 100%;
+  font-weight: 700;
   text-shadow: 0px 1.2px 1.2px #202020;
   letter-spacing: 1.5rem;
 }
-/* intro part */
+
+/* Intro part/ gradient background */
 #introPart {
   min-height: 280px;
-  width: 100%;
+  font-family: "Raleway";
+  text-align: center;
 }
 .intro {
-  padding: 2rem 1rem;
-  text-align: right;
+  text-align: left;
+  margin-top: 2%;
+  margin-left: 10%;
 }
 
 .introName {
-  font-family: "Raleway";
-  font-size: 5rem;
-  text-shadow: 0px 1px 1px #202020;
+  font-size: 6rem;
+  font-weight: 700;
+  text-shadow: 0px 1px 2px #202020;
 }
 .myName {
-  color: #eeeeee;
+  color: #f2efea;
 }
 
 .introJob {
-  color: #eeeeee;
+  color: #f2efea;
   font-size: 1.5rem;
   text-shadow: 0px 1px 1px #202020;
-  font-family: "Raleway";
 }
 .photo {
-  margin: auto;
+  margin: 0 auto;
   max-width: 280px;
-  box-shadow: 20px 2px 9px #1e0822;
+  box-shadow: 6px 1px 20px #1e0822;
   border-radius: 50%;
 }
 
-/* quote */
+/* quote part */
 .jQuote {
-  font-family: "Roboto Light";
+  font-family: "Raleway";
   margin: 30px 0;
   padding-top: 2%;
+  text-align: right;
 }
 .jQuote_text {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-style: italic;
-  margin-top: 1.5rem;
 }
 .jQuote_name {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
-/* Page second -my journey */
+/* Page second -my journey and education*/
 #my_journey {
+  font-family: "Raleway";
   margin-top: 10%;
+  padding: 2rem;
   color: #1d1d1d;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 2rem;
-}
-h2 {
   text-align: left;
 }
 td {
   vertical-align: top;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 0.2rem solid #ddd;
   padding: 0.7rem;
 }
 
+.about p,
 .eduTable {
-  width: 90%;
-  text-align: left;
-  margin-top: 3rem;
-  font-family: sans-serif;
+  width: 95%;
+  margin: 2rem 2rem 5rem 0;
 }
-.about p {
-  width: 90%;
-  text-align: justify;
-  margin-top: 3rem;
-  padding: 0 1rem 0 0;
-}
-
 /* Page third -skill part */
+.skillPart {
+  padding-top: 10%;
+  text-align: center;
+}
 .skillPart img {
-  max-width: 80%;
+  max-width: 95%;
 }
 
-/* Page four -contact part */
+/* Page four -contact part and contact_form*/
 #contact {
+  font-family: "Raleway";
   background: linear-gradient(#363636 -10%, #111111 110%);
   color: #eeeeee;
+  padding-top: 3%;
 }
+.contactInfo {
+  margin: 4rem auto;
+  text-align: center;
+  font-weight: 100;
+  font-size: 1.2rem;
+  width: 90%;
+}
+.contactInfo h4 {
+  font-weight: 700;
+}
+.socIcon img {
+  margin-top: 4rem;
+  padding: 10px;
+  max-width: 12%;
+  min-width: 10%;
+}
+
 .contactForm {
+  font-family: "Raleway";
   max-height: 900px;
   color: #f2efea;
   width: 80%;
@@ -260,25 +270,8 @@ td {
 }
 .contactForm h3 {
   margin: 3rem auto;
-  font-weight: 800;
+  font-weight: 700;
 }
-
-.contactInfo {
-  margin: 3rem auto;
-  text-align: center;
-  font-weight: 100;
-  font-size: 1.2rem;
-  width: 90%;
-}
-.contactInfo h4 {
-  font-weight: 800;
-}
-.socIcon img {
-  margin-top: 4rem;
-  padding: 10px;
-  max-width: 15%;
-}
-
 input[type="tel"],
 input[type="email"],
 input[type="text"],
@@ -295,11 +288,5 @@ input[type="email"]:focus,
 input[type="text"]:focus {
   border: none;
   background-color: #424242;
-}
-/* footer part */
-footer p {
-  margin: 10px 0 10px 20px;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #f2efea;
 }

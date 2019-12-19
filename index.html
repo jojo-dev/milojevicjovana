@@ -2,246 +2,218 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Milojevic Jovana</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Milojevic Jovana</title>
+    <link rel="icon" href="images/skype.jpg" type="image/icon type">
+    <!-- styling links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- end of styling links -->
 </head>
 
 <body>
-  <main class="wrapper">
+
+    <!-- navigation meny -->
     <header>
-      <section class="container-fluid">
-        <div class="Navbar row">
-          <div class="Navbar__Link-brand col-xl-3 col-xs-5">
-            <div class="my_logo navbar-brand Navbar__Link-toggle ">
-              <a class="navbar-brand" href="#">
-                <img src="images/my_logo.png" width="150px;" /></a>
+        <div class="top w3-panel">
+            <div class="row">
+                <a href="#" class="navbar-brand w3-col s5 l6">
+                    <img src="images/my_logo.png" width="170px;" /></a>
+                <span class="navItems">
+                    <a href="#me" class="w3-bar-item w3-button w3-mobile w3-hide-small">me</a>
+                    <a href="#my_journey" class="w3-bar-item w3-button w3-mobile w3-hide-small">my journey</a>
+                    <a href="#my_skills" class="w3-bar-item w3-button w3-mobile w3-hide-small">my skills</a>
+                    <a href="#contact" class="w3-bar-item w3-button w3-mobile w3-hide-small">contact</a>
+                </span>
+                <a href="javascript:void(0)"
+                    class="w3-bar-item w3-button w3-xlarge w3-right w3-hide-large w3-hide-medium w3-col s5 l6"
+                    onclick="myFunction()">&#9776; </a>
             </div>
-          </div>
-          <nav class="Navbar__Items col-xl-6">
-            <div class="Navbar__Link col-xl-3">
-              <a class="me acive" href="#me">me</a>
+
+            <div id="demo" class="navItemsHid w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+                <a href="#" class="w3-bar-item w3-button">me</a>
+                <a href="#" class="w3-bar-item w3-button">my journey</a>
+                <a href="#" class="w3-bar-item w3-button">my skills</a>
+                <a href="#" class="w3-bar-item w3-button">contact</a>
             </div>
-            <div class="Navbar__Link col-xl-3">
-              <a class="my_journey" href="#my_journey">my journey</a>
-            </div>
-            <div class="Navbar__Link col-xl-3">
-              <a class="my_skills" href="#my_skills">my skills</a>
-            </div>
-            <div class="Navbar__Link col-xl-3">
-              <a class="contact" href="#contact">contact</a>
-            </div>
-          </nav>
-          <div class="Navbar__Link col-xl-3">
-            <a href="images/Milojevic-Jovana-CV.pdf" download="Milojevic-Jovana-CV"><button
-                class="btn resumeBtn btn-dark">resume</button> </a>
-          </div>
+
         </div>
-      </section>
+        <!-- end of navigation meny -->
+
+        <!-- greeting part -->
+        <section id="me" class="helloWorld w3-panel greet">
+            <p>HELLO WORLD</p>
+        </section>
     </header>
-    <!-- first page -->
-    <div id="me" class="container">
-      <section class="greet row">
-        <span class="helloWorld col-xs-12 col-lg-12">
-          <p>HELLO WORLD</p>
-        </span>
-      </section>
-    </div>
+    <!-- end of greeting part -->
 
-    <section id="introPart" class="gradientStyle container-fluid">
-      <div class="row ">
-        <div class="intro col-xs-6 col-md-5 col-xl-6">
-          <p class="introName">I'm <span class="myName">Jovana</span></p>
-          <br />
-          <p class="introJob">JUNIOR WEB DEVELOPER / DESIGNER</p>
+    <section id="introPart" class="gradientStyle w3-panel row">
+        <div class="intro w3-col s12 l5">
+            <p class="introName">I'm <span class="myName">Jovana</span></p>
+            <br />
+            <p class="introJob w3-col s12">JUNIOR WEB DEVELOPER / DESIGNER</p>
         </div>
 
-        <div class="photo col-xs-6 col-xl-6">
-          <img src="images/cv-photo.png" width="280px" />
+        <div class="photo w3-col s12 l7">
+            <img src="images/cv-photo.png" width="280px" />
         </div>
 
-      </div>
     </section>
 
-    <!-- end of header -->
 
-    <section class="container">
-      <section id="jQuote" class="page">
-        <div class="jQuote row">
-          <div class="column col-lg-1 col-xs-2">
-            <p class="scrollPartLeft">SCROLL &numsp; <span class="subHeading"></span></p>
-          </div>
-
-          <div class="column col-lg-11 col-xs-8" style="text-align: left;">
-            <p class="jQuote_text">
-              “Programming isn't about what you know, it's about what you can
-              figure out.”
-            </p>
-            <p class="jQuote_name">- Chris Pine</p>
-          </div>
-        </div>
-      </section>
-      <!-- end of quote -->
-      <!-- second page -->
-      <section id="my_journey" class="page">
-        <div class="row">
-          <section id="edu" class="column col-lg-5">
-            <h2>Education</h2>
-            <div class="eduTable">
-              <table>
-                <tr>
-                  <td>2019&emsp;</td>
-                  <td>The Ultimate MySQL Bootcamp: Go from SQL Beginner to
-                    Expert - by Colt Steele (Udemy)</td>
-                </tr>
-                <tr>
-                  <td>2019&emsp;</td>
-                  <td>The Complete 2020 Web Development Bootcamp - by Angela Vu (Udemy)</td>
-                </tr>
-                <tr>
-                  <td>2014&emsp;</td>
-                  <td> Studies of Pschology</td>
-                </tr>
-                <tr>
-                  <td>2010&emsp;</td>
-                  <td>Tourism Technician</td>
-                </tr>
-              </table>
+    <section class="w3-container" style="width:90%; margin:2rem auto;">
+        <section id="jQuote" class="jQuote row page">
+            <div class="w3-col s2 l2">
+                <p class="scrollPartLeft">SCROLL &numsp; <span class="subHeading"></span></p>
             </div>
-          </section>
-          <section class="column col-lg-6">
-            <div class="about ">
-              <h2>My journey</h2>
-              <p>I'm student of psychology who decided to become self taught web developer and designer.<br>
-                I don't have any practical work experience in this field that i could cite.
-                But I have four years of volonteer experience in diferent organisations.During that time i became
-                dedicated, adaptable and loyal worker.<br>
-                I trive to improve my knowledge and skills in order to advance my career in IT.
-              </p>
-            </div>
-          </section>
-          <section class="column col-lg-1 col-xs-1">
-            <p class=" scrollPartRight ">
-              SCROLL &numsp; <span class="subHeading"> my journey</span>
-            </p>
-          </section>
-        </div>
-      </section>
-      <!-- end of my journey part -->
 
-      <!-- third page -->
-      <section id="my_skills" class="page">
-        <div class="row skillPart">
-          <div class="column col-lg-1 col-xs-1">
-            <p class="scrollPartLeft">
-              SCROLL &numsp;
-              <span class="subHeading"> my skills</span>
-            </p>
-          </div>
-          <div class="column col-lg-11 col-sx-7">
-            <img class="skills" src="images/skills.png" width="80%" /> </div>
+            <div class="w3-col s8 l6">
+                <p class="jQuote_text">
+                    “Programming isn't about what you know, <br> it's about what you can
+                    figure out.”
+                </p>
+                <p class="jQuote_name">- Chris Pine</p>
+            </div>
+        </section>
+        <!-- end of quote -->
+        <!-- second page, journey part-->
+        <div id="my_journey" class="row page">
+            <section id="edu" class="w3-col s12 l5">
+                <h2>Education</h2>
+                <div class="eduTable">
+                    <table>
+                        <tr>
+                            <td>2019&emsp;</td>
+                            <td>The Ultimate MySQL Bootcamp: Go from SQL Beginner to
+                                Expert by Colt Steele (Udemy)</td>
+                        </tr>
+                        <tr>
+                            <td>2019&emsp;</td>
+                            <td>The Complete 2020 Web Development Bootcamp by Angela Vu (Udemy)</td>
+                        </tr>
+                        <tr>
+                            <td>2014&emsp;</td>
+                            <td> Studies of Pschology</td>
+                        </tr>
+                        <tr>
+                            <td>2010&emsp;</td>
+                            <td>Tourism Technician</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <div class="about w3-col s11 l6">
+                <h2>My journey</h2>
+                <p>I'm student of psychology who decided to become self taught web developer and designer.<br>
+                    I don't have any practical work experience in this field that i could cite, but I have four
+                    years of
+                    volonteer experience in diferent organisations. During that time i became
+                    dedicated, adaptable and loyal worker.<br>
+                    I trive to improve my knowledge and skills in order to advance my career in IT.
+                </p>
+                <span class="Navbar__Link">
+                    <button id="resumeBtn" class="btn btn-dark"><a href="images/Milojevic-Jovana-CV.pdf"
+                            download="Milojevic-Jovana-CV">resume</a></button>
+                </span>
+            </div>
+
+            <section class="w3-col s1 l1">
+                <p class=" scrollPartRight ">
+                    SCROLL &numsp; <span class="subHeading"> my journey</span>
+                </p>
+            </section>
         </div>
-      </section>
-      <!-- end of skill part -->
+        <!-- end of my journey part -->
+        <!-- third page -->
+        <section id="my_skills" class="page row skillPart">
+            <div class="w3-col s2 l1">
+                <p class="scrollPartLeft">
+                    SCROLL &numsp;
+                    <span class="subHeading"> my skills</span>
+                </p>
+            </div>
+            <div class="w3-col s10 l11">
+                <img class="skills" src="images/skills.png" width="80%" />
+            </div>
+        </section>
+        <!-- end of skill part -->
     </section>
-
     <!-- fourth page -->
-    <section id="contact">
-      <div class="container-fluid">
-        <div class="contactPart row">
-          <div class="col-xs-10 col-md-5  col-lg-6">
-            <div class="contactInfo">
-              <h4>Adress</h4>
-              <p>
-                Vojvode Stepe 75v,<br />
-                Kraljevo, Srbija, 36000
-              </p>
-              <br />
-              <h4>Phone</h4>
-              <p>+381 64/ 01 01 769</p>
-              <br />
-              <h4>Email</h4>
-              <p>jovanamilojevicofficial@gmail.com</p>
-              <span class="socIcon">
-                <a href="https://github.com/jojo-dev" target="_blank"><img src="images/github.png" /></a>
-                <a href="https://www.linkedin.com/in/jovana-milojevic-83840915b/" target="_blank"><img
-                    src="images/linkedin.png" /></a>
-                <a href="https://join.skype.com/invite/vbLIASOlwwxq" target="_blank"><img src="images/skype.png" /></a>
-              </span>
-            </div>
-          </div>
-
-          <div class="col-xs-10 col-md-5  col-lg-6">
-            <div class="contactForm containerBlack">
-              <h3>CONTACT FORM</h3>
-
-              <form action="https://send.pageclip.co/api_Wlrp1zJATYZmhR2X2AmOUjBeJ5rMuTpQ/contact-form"
-                class="pageclip-form" method="post">
-                <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
-                <input type="text" class="form-control" name="user_name" placeholder="Your name" required />
-                <input type="number" class="form-control" name="user_phone" placeholder="Your phone" />
-                <input type="email" class="form-control" name="user_email" placeholder="Your e-mail" required />
-                <input type="text" class="form-control" name="message" placeholder="Your message" required />
-                <!-- This button will have a loading spinner. Keep the inner span for best results. -->
-                <button type="submit" class="btn sendBtn btn-dark pageclip-form__submit">
-                  <span>SEND</span>
-                </button>
-              </form>
-            </div>
-          </div>
+    <section id="contact" class="contactPart row">
+        <div class="w3-col s12 l6">
+            <section class="contactInfo">
+                <h4>Adress</h4>
+                <p>
+                    Vojvode Stepe 75v,<br />
+                    Kraljevo, Srbija, 36000
+                </p>
+                <br />
+                <h4>Phone</h4>
+                <p>+381 64/ 01 01 769</p>
+                <br />
+                <h4>Email</h4>
+                <p>jovanamilojevicofficial@gmail.com</p>
+                <span class="socIcon">
+                    <a href="https://github.com/jojo-dev" target="_blank"><img src="images/github.png" /></a>
+                    <a href="https://www.linkedin.com/in/jovana-milojevic-83840915b/" target="_blank"><img
+                            src="images/linkedin.png" /></a>
+                    <a href="https://join.skype.com/invite/vbLIASOlwwxq" target="_blank"><img
+                            src="images/skype.png" /></a>
+                </span>
+            </section>
         </div>
-      </div>
-    </section> <!-- end of contact part -->
+
+        <div class="w3-col s12 l6">
+            <section class="contactForm containerBlack">
+                <h3>CONTACT FORM</h3>
+                <form id="myForm" method="post">
+                    <input type="text" class="form-control" name="user_name" placeholder="Your name" required />
+                    <input type="tel" class="form-control" name="user_phone" placeholder="Your phone" />
+                    <input type="email" class="form-control" name="user_email" placeholder="Your e-mail" required />
+                    <input type="text" class="form-control" name="message" placeholder="Your message" required />
+                    <!-- This button will have a loading spinner. Keep the inner span for best results. -->
+                    <button type="submit" id="sendBtn" class="btn btn-dark pageclip-form__submit">
+                        <span>SEND</span>
+                    </button>
+                </form>
+            </section>
+        </div>
+    </section>
+    <!-- end of contact part -->
+
+
     <!-- footer -->
     <footer>
-      <div class="container-fluid">
-        <div class="row">
-          <p>
-            &nbsp;
-            <a target="_blank"
-              href="https://www.behance.net/milojevic-design?tracking_source=search%7CMarko%20milojevic">
-              &nbsp; &COPY MILOJEVIC DESIGN </a>
-            | 2019 All rights reserved
-          </p>
-        </div>
-      </div>
+        <section class="w3-panel">
+            <p>
+                &nbsp;
+                <a target="_blank"
+                    href="https://www.behance.net/milojevic-design?tracking_source=search%7CMarko%20milojevic">
+                    &nbsp; &COPY MILOJEVIC DESIGN </a>
+                | 2019 All rights reserved
+            </p>
+        </section>
     </footer>
+    <!-- end of footer part -->
 
 
-
-  </main>
-
-  <!-- FLATICON LINK -->
-  <script src="https://kit.fontawesome.com/e1d54cac1a.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
-
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@6.9.0/dist/email.min.js"></script>
-  <script type="text/javascript" src="contactForm.js">
-  // window.onload = function () {
-  //     document.getElementById('contact-form').addEventListener('submit', function (event) {
-  //       event.preventDefault();
-  //       // generate the contact number value
-  //       this.contact_number.value = Math.random() * 100000 | 0;
-  //       emailjs.sendForm('gmail', 'contactFormMilojevicDesignCV', this);
-  //     });
-  //   }
-  </script>
-  <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+    <!-- script part -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("demo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
 </body>
 
 </html>
