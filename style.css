@@ -236,7 +236,7 @@ td {
 }
 /* Page third -skill part */
 #my_skills {
-  padding-top: 10%;
+  padding: 10% 0;
   text-align: center;
 }
 #my_skills img {
