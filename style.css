@@ -144,8 +144,9 @@ a:link {
   .about {
     padding-right: 1rem;
   }
-  .skillPart img {
+  #my_skills img {
     margin-top: 30%;
+    min-width: 80%;
   }
   .introName {
     float: left;
@@ -234,11 +235,11 @@ td {
   margin: 2rem 2rem 5rem 0;
 }
 /* Page third -skill part */
-.skillPart {
+#my_skills {
   padding-top: 10%;
   text-align: center;
 }
-.skillPart img {
+#my_skills img {
   max-width: 400px;
 }
 
