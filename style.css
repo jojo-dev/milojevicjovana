@@ -142,11 +142,11 @@ a:link {
     margin-bottom: 30%;
   }
   .about {
-    padding-right: 1rem;
+    margin-right: 2rem;
   }
   #my_skills img {
     margin-top: 30%;
-    min-width: 80%;
+    max-width: 90%;
   }
   .introName {
     float: left;
