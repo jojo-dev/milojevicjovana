@@ -128,32 +128,6 @@ a:link {
   letter-spacing: 10pt;
 }
 
-@media only screen and (max-width: 720px) {
-  .helloWorld p {
-    max-width:80%;
-    text-align: center;
-    padding:2rem;
-  }
-  .navbar-brand img {
-    margin-top: 3%;
-  }
-  .eduTable {
-    min-width: 90%;
-    margin-bottom: 30%;
-  }
-  .about {
-    margin-right: 2rem;
-  }
-  #my_skills img {
-    margin-top: 30%;
-    max-width: 90%;
-  }
-  .introName {
-    float: left;
-    margin-left: -20px;
-  }
-}
-
 /* Hello World part */
 .helloWorld p {
   font-family: "Oswald";
@@ -216,8 +190,8 @@ a:link {
 #my_journey {
   font-family: "Raleway";
   margin-top: 10%;
-  margin-right: 2rem;
-  padding: 2rem;
+  margin-right: 1rem;
+  padding: 1rem;
   color: #1d1d1d;
   font-size: 1.2rem;
   line-height: 2rem;
@@ -232,7 +206,7 @@ td {
 .about p,
 .eduTable {
   width: 95%;
-  margin: 2rem 2rem 5rem 0;
+  margin: 2rem 0 5rem 0;
 }
 /* Page third -skill part */
 #my_skills {
@@ -295,4 +269,30 @@ input[type="text"]:focus {
   border: none;
   background-color: #424242;
   color: #f2efea;
+}
+
+@media only screen and (max-width: 720px) {
+  .helloWorld p {
+    max-width:80%;
+    text-align: center;
+    padding:2rem;
+  }
+  .navbar-brand img {
+    margin-top: 3%;
+  }
+  .eduTable {
+    min-width: 90%;
+    margin-bottom: 30%;
+  }
+  .about {
+   padding-right: 2rem;
+  }
+  #my_skills img {
+    margin-top: 30%;
+    max-width: 400px;
+  }
+  .introName {
+    float: left;
+    margin-left: -20px;
+  }
 }
