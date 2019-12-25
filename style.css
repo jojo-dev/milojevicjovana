@@ -290,7 +290,8 @@ input[type="text"]:focus {
   #my_skills img {
     margin-top: 30%;
     padding: 1.5rem;
-    max-width: 400px;
+    width: 400px;
+max-width:90%;
   }
   .introName {
     float: left;
