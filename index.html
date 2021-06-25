@@ -113,8 +113,7 @@
             <div class="about w3-col s11 l6">
                 <h2>My journey</h2>
                 <p>I'm student of psychology who decided to become self taught web developer and designer.<br>
-                    I don't have any practical work experience in this field that i could cite, but I have four
-                    years of
+                    During couledge I earned four years of
                     volonteer experience in diferent organisations. During that time i became
                     dedicated, adaptable and loyal worker.<br>
                     I trive to improve my knowledge and skills in order to advance my career in IT.
@@ -150,13 +149,8 @@
     <section id="contact" class="contactPart row">
         <div class="w3-col s12 l6">
             <section class="contactInfo">
-                <h4>Adress</h4>
-                <p>
-                    Vojvode Stepe 75v,<br />
-                    Kraljevo, Srbija, 36000
-                </p>
-                <br />
-                <h4>Phone</h4>
+                
+             <h4>Phone</h4>
                 <p>+381 64/ 01 01 769</p>
                 <br />
                 <h4>Email</h4>
@@ -177,6 +171,7 @@
                 <form id="myForm" method="POST" action="https://formspree.io/moqjvgnl">
                     <input type="text" class="form-control" name="user_name" placeholder="Your name" required />
                     <input type="tel" class="form-control" name="user_phone" placeholder="Your phone" />
+                     <!-- <p class="antispam"><input type="text" name="url"></p> -->
                     <input type="email" class="form-control" name="user_email" placeholder="Your e-mail" required />
                     <input type="text" class="form-control" name="message" placeholder="Your message" required />
                     <!-- This button will have a loading spinner. Keep the inner span for best results. -->
@@ -195,13 +190,18 @@
     <!-- footer -->
     <footer>
         <section class="w3-col l12">
-            <p>
-                &nbsp;
-                <a target="_blank"
-                    href="https://www.behance.net/logologija">
-                    &nbsp; &COPY LOGOLOGIJA</a>
-                | 2019 All rights reserved
-            </p>
+            <div class="Cntr row"> 
+                <p class="copyRight"> 
+                    <script> var mydate = new Date(); var year = mydate.getYear(); if (year < 1000) year += 1900; document.write('<span>&copy; ' + year + ' | &nbsp; All rights reserved.</span>') 
+                     </script> 
+                </p> 
+                
+                <p class="mDesign">Design: 
+                    <a rel="nofollow" href="https://www.instagram.com/mayerdesignstudio/" target="_blank"> 
+                         <img class="mayerLogo" src="images/Asset 12.png" width="50px;" style="display:inline-flex; padding-left:5px" />
+                    </a>
+                </p>
+            </div>
         </section>
     </footer>
     <!-- end of footer part -->
