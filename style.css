@@ -21,7 +21,6 @@ footer p {
 }
 footer p {
   font-weight: 500;
-  float: left;
   margin: 1rem 1.5rem;
   -webkit-background-clip: text;
   background-clip: text;
